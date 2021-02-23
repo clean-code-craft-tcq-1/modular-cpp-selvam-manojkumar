@@ -3,7 +3,9 @@
 
 #include "TelCoColorCoder.h"
 
-
+/* Func Description: testcase to verify match in color code
+ * with obtained major and minor color.
+ */
 void TestNumberToPair(int pairNumber,
 	TelCoColorCoder::MajorColor expectedMajor,
 	TelCoColorCoder::MinorColor expectedMinor)
@@ -15,6 +17,9 @@ void TestNumberToPair(int pairNumber,
 	assert(colorPair.GetMinor() == expectedMinor);
 }
 
+/* Func Description: testcase to verify match in major and minor color
+ * with obtained code.
+ */
 void TestPairToNumber(
 	TelCoColorCoder::MajorColor major,
 	TelCoColorCoder::MinorColor minor,
@@ -24,6 +29,9 @@ void TestPairToNumber(
 	std::cout << "Got pair number " << pairNumber << std::endl;
 	assert(pairNumber == expectedPairNumber);
 }
+
+/* Func Description: Test api to get the color code form
+ */
 void TestRefferenceManual() 
 {
 	TelCoColorCoder::PrintColorcodes();

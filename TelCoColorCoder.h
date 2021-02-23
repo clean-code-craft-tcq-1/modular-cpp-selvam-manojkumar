@@ -30,7 +30,7 @@ namespace TelCoColorCoder
 			CColorPair(MajorColor major, MinorColor minor);
 			MajorColor GetMajor();
 			MinorColor GetMinor(); 
-			std::string ToString();
+			std::string ColorPairToString();
 	};
 
 	extern CColorPair GetColorFromPairNumber(int pairNumber);

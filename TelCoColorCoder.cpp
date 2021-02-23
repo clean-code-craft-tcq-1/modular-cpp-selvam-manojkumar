@@ -1,3 +1,12 @@
+/**
+*
+* \file
+*
+* \brief This file defines the manespace TelCoColorCoder.
+*
+*
+******************************************************************************/
+
 #include <iostream>
 #include "TelCoColorCoder.h"
 

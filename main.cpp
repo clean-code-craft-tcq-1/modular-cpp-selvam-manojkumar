@@ -34,7 +34,7 @@ void TestPairToNumber(
  */
 void TestRefferenceManual() 
 {
-	TelCoColorCoder::PrintColorcodes();
+	TelCoColorCoder::PrintColorCodesForm();
  }
 
 int main() {

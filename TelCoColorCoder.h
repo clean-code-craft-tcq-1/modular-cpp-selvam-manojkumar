@@ -1,3 +1,11 @@
+/**
+*
+* \file
+*
+* \brief This file has declaration for namespace TelCoColorCoder.
+*
+*
+******************************************************************************/
 #pragma once
 
 namespace TelCoColorCoder
@@ -9,6 +17,10 @@ namespace TelCoColorCoder
 	extern int numberOfMinorColors;
 	extern const char* MinorColorNames[];
 
+/**
+ * This class represents a Colorpair as a single entity.
+ *
+ */
 	class CColorPair
 	{
 		private:
@@ -23,5 +35,5 @@ namespace TelCoColorCoder
 
 	extern CColorPair GetColorFromPairNumber(int pairNumber);
 	extern int GetPairNumberFromColor(MajorColor major, MinorColor minor);
-	extern void PrintColorcodes();
+	extern void PrintColorCodesForm();
 }

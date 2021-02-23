@@ -18,6 +18,7 @@ namespace TelCoColorCoder
 	int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 	CColorPair::CColorPair(MajorColor major, MinorColor minor) : majorColor(major), minorColor(minor) {}
+	
 	std::string CColorPair::ToString() 
 	{
 		std::string colorPairStr = MajorColorNames[majorColor];
@@ -25,10 +26,12 @@ namespace TelCoColorCoder
 		colorPairStr += MinorColorNames[minorColor];
 		return colorPairStr;
 	}
+	
 	MajorColor CColorPair::GetMajor()
 	{
 		return majorColor;
 	}
+	
 	MinorColor CColorPair::GetMinor()
 	{
 		return minorColor;

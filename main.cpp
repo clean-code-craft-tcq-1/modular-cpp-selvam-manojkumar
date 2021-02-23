@@ -13,7 +13,7 @@ void TestNumberToPair(int pairNumber,
 {
 	TelCoColorCoder::CColorPair colorPair =
 		TelCoColorCoder::GetColorFromPairNumber(pairNumber);
-	std::cout << "Got pair" << colorPair.ToString() << std::endl;
+	std::cout << "Got pair" << colorPair.ColorPairToString() << std::endl;
 	assert(colorPair.GetMajor() == expectedMajor);
 	assert(colorPair.GetMinor() == expectedMinor);
 }

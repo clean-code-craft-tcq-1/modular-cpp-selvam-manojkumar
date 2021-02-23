@@ -51,7 +51,7 @@ namespace TelCoColorCoder
 		return major * numberOfMinorColors + minor + 1;
 	}
 
-	void PrintColorcodes() 
+	void PrintColorCodesForm() 
 	{
 		std::cout << "\t" << "ColorCode" << "\t" << "ColorPair"<<std::endl;
 		for (uint16_t pairIndex = 1; pairIndex <= (numberOfMajorColors * numberOfMinorColors); pairIndex++)
